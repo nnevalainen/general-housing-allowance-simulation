@@ -6,6 +6,14 @@ For more information about the housing allowance please check this [document at 
 
 Both upper secondary and higher education students will be transferred under the general housing allowance on 1 August 2017. This simulation aims to clarify the immediate effects on students living in rented apartments.
 
+### Examples
+
+[logo]: https://github.com/nnevalainen/general-housing-allowance-simulation/figure_1.png?raw=true
+
+[logo]: https://github.com/nnevalainen/general-housing-allowance-simulation/figure_2.png?raw=true
+
+[logo]: https://github.com/nnevalainen/general-housing-allowance-simulation/figure_3.png?raw=true
+
 ### Dependencies
 
 1. Python3
