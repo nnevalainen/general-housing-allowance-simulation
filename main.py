@@ -17,13 +17,14 @@ class Calculator:
 
     DB = "asumislisa.db"
 
-    def __init__(self, adults, chilren, income, city):
+    def __init__(self, adults, chilren, income, city, discard_electricity):
 
         self.api = DbHandler(Calculator.DB)
         self.adults = adults
         self.children = chilren
         self.income = income
         self.city_group = self.get_city_group(city)
+        self.discard_electricity
 
     def get_city_group(self, city):
         city = city.strip().upper()
@@ -31,8 +32,9 @@ class Calculator:
 
     def discard_electricity(self, rent):
         """
-        Dummy implementation
-        TODO - find out the real function
+        The constant is estimated from the data of an existing
+        KELA calculator. No official method for discarding the electricity
+        was publicly available.
         """
         return rent - 22.2
 
@@ -46,9 +48,11 @@ class Calculator:
     def get_acceptable_expenses(self, rent):
         """
         Get the amount of expenses counted as acceptable
-        TODO - count more parameters
+        TODO - count more parameters:
+            heating included/not included
+            water included/not included
         """
-        acceptable = self.discard_electricity(rent)
+        acceptable = self.discard_electricity(rent) if self.discard_electricity else rent
         return acceptable
 
     def get_total_benefit(self, rent):
@@ -79,9 +83,9 @@ def plot(rent, benefit, to_be_paid, city, adults, children, income):
     plt.xlabel("Rent")
     plt.show()
 
-def plot_benefit(city, income, adults, children, rent_from, rent_to):
+def plot_benefit(city, income, adults, children, rent_from, rent_to, discard_electricity):
 
-    calculator = Calculator(adults, children, income, city)
+    calculator = Calculator(adults, children, income, city, discard_electricity)
     f = np.vectorize(calculator.get_total_benefit)
 
     rent = np.arange(rent_from, rent_to, 1)
@@ -110,7 +114,8 @@ def main():
     parser.add_argument('-e', '--electricity', help="Make electricity not included")
 
     args = parser.parse_args()
+    electricity_included = False if args.electricity else True
 
-    plot_benefit(args.city, args.income, args.adults, args.children, args.min, args.max)
+    plot_benefit(args.city, args.income, args.adults, args.children, args.min, args.max, electricity_included)
 
 main()
