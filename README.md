@@ -8,11 +8,11 @@ Both upper secondary and higher education students will be transferred under the
 
 ### Examples
 
-[logo]: https://github.com/nnevalainen/general-housing-allowance-simulation/blob/master/Figures/figure_1.png
+![Figure 1]: (https://github.com/nnevalainen/general-housing-allowance-simulation/blob/master/Figures/figure_1.png)
 
-[logo]: https://github.com/nnevalainen/general-housing-allowance-simulation/blob/master/Figures/figure_2.png
+![Figure 2]: (https://github.com/nnevalainen/general-housing-allowance-simulation/blob/master/Figures/figure_2.png)
 
-[logo]: https://github.com/nnevalainen/general-housing-allowance-simulation/blob/master/Figures/figure_3.png
+![Figure 3]: (https://github.com/nnevalainen/general-housing-allowance-simulation/blob/master/Figures/figure_3.png)
 
 ### Dependencies
 
