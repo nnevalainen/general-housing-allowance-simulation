@@ -36,12 +36,12 @@ Examples of the output of the simulation. Blue line represents the paid housing 
 
 ![Figure 1](https://github.com/nnevalainen/general-housing-allowance-simulation/blob/master/Figures/figure_1.png)
 
-**Example 1, Single in Espoo**
+**Example 1, Single in Espoo:**
 A student living alone in Espoo with no income besides the study grant. Maximum housing allowance of 394e is paid for housing costs of 514 onwards (including electricity).
 
 ![Figure 2](https://github.com/nnevalainen/general-housing-allowance-simulation/blob/master/Figures/figure_2.png)
 
-**Example 2, Single in Turku**
+**Example 2, Single in Turku:**
 The same situation as before but this time student is living in Turku. The maximum housing allowance of 312e is paid for housing costs of 412 onwards (including electricity).
 
 ### Implementation
