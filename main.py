@@ -91,7 +91,6 @@ def plot_benefit(city, income, adults, children, rent_from, rent_to, discard_ele
     rent = np.arange(rent_from, rent_to, 1)
     benefit = f(rent)
     to_be_paid = rent - benefit
-
     plot(rent, benefit, to_be_paid, city, adults, children, income)
 
 def main():
