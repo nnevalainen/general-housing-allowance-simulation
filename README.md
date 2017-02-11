@@ -14,6 +14,7 @@ Both upper secondary and higher education students will be transferred under the
 
 ![Figure 3]: (https://github.com/nnevalainen/general-housing-allowance-simulation/blob/master/Figures/figure_3.png)
 
+
 ### Dependencies
 
 1. Python3
